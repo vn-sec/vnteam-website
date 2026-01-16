@@ -3,7 +3,7 @@ import LayoutPage from "@/layouts/LayoutPage.astro";
 import Page from "@/components/Page.astro";
 import { parsedSiteConfig } from "@/site-config";
 
-const conf = await parsedSiteConfig.page.vnctf;
+const conf = await parsedSiteConfig.page.vnctf2025;
 const doc_title = [conf.title, await parsedSiteConfig.title].filter(Boolean).join(" | ");
 ---
 
@@ -15,14 +15,14 @@ const doc_title = [conf.title, await parsedSiteConfig.title].filter(Boolean).joi
         content={conf.content}
         mdOptions={{ externalLink: true }}
     >
-        <div class="see-former-vnctf">
-            <p><a href="/vnctf-2025">See VNCTF 2025</a></p>
+        <div class="see-active-vnctf">
+            <p><a href="/vnctf">See active VNCTF</a></p>
         </div>
     </Page>
 </LayoutPage>
 
 <style lang="scss">
-    .see-former-vnctf {
+    .see-active-vnctf {
         text-align: center;
         margin-top: 2em;
         p {

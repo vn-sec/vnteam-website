@@ -44,6 +44,8 @@ export interface SiteConfig {
         "achievements"?: WithConfigUrl<AchievementsInfo[] | PageConfig<AchievementsInfo[]>>;
         "members"?: WithConfigUrl<MemberInfo[] | PageConfig<MemberInfo[]>>;
         "join"?: WithConfigUrl<PageConfig>;
+        "vnctf"?: WithConfigUrl<PageConfig>;
+        "vnctf2025"?: WithConfigUrl<PageConfig>;
     }
     footer: markdown | markdown[] | (markdown | markdown[])[];
 }
